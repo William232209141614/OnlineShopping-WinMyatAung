@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="externalstyle.css">
+   
+</head>
+
+<body>
+<img id="saw" src="logo1.png">
+<!-- Site navigation menu -->
+<ul class="navbar">
+	<!--<h2 style="color:#f5deb3">ABC Educational online shopping</h2></td>-->
+<li><a href="index.html">Home page</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="login.html">Sign in</a></li>
+</ul>
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Category</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="tablet.html" class="w3-bar-item w3-button" style="color:#fff">Drawing Tablet</a>
+     <a href="smartboard.html" class="w3-bar-item w3-button" style="color:#fff">Smart Board</a>
+     <a href="microphone.html" class="w3-bar-item w3-button" style="color:#fff">Microphone</a>
+ </div>
+</div>
+<!-- Main content -->
+<h2>ABC Educational online shopping</h2>
+<br>
+<Center><h1><b>Welcome</b></h1></Center>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+ <p style="color:#293352" >Welcome to my page!This page makes you all to be in one amount for satisfactory about educational product.There should be more to the site of educational product,
+  so, I always add the new, new things and
+   other things which you want to buy items.
+  There are three Categories for our pages. They are Digital Drawing and Writing Tablet, Smart board and Microphone.
+ There are reasons why we added these things. Digital tablets are intended for children. As the educational tools, smartboard is more modernized and to be clear while
+you are learning. When you need to teach many students, you need microphone.</p>
+
+<!--Footer-->
+<div align="center" class="myat">
+  <a href="aboutus.html" style="color:#293352">About Us</a>&nbsp &nbsp &nbsp<a href="contactus.html" style="color:#293352">Contact Us</a>&nbsp &nbsp &nbsp <a href="terms.html" style="color:#293352">Terms & Conditions</a> 
+  </div>
+  
+</body>
+</html>

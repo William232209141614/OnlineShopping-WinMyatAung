@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="externalstyle.css">
+   
+</head>
+
+<body>
+<img id="saw" src="logo1.png">
+<!-- Site navigation menu -->
+<ul class="navbar">
+	<!--<h2 style="color:#f5deb3">ABC Educational online shopping</h2></td>-->
+<li><a href="index.html">Home page</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="login.html">Sign in</a></li>
+</ul>
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Category</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="tablet.html" class="w3-bar-item w3-button" style="color:#fff">Drawing Tablet</a>
+     <a href="smartboard.html" class="w3-bar-item w3-button" style="color:#fff">Smart Board</a>
+     <a href="microphone.html" class="w3-bar-item w3-button" style="color:#fff">Microphone</a>
+ </div>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+</script>
+<h2 >ABC Educational online shopping</h2>
+<br>
+<img src="DI TA3.png" width="200px" height="300px" alt="Digital Drawing and Writing Tablet">
+<h5 style="color:rgb(69, 22, 114); font-size:28px;">Product Details</h5>
+<ul style="list-style-type:disc;">
+
+    <li style="color:#000000;  font-size:20px;">LARGE WORK AREA: a fair amount of drawing space, 10 x 6 inches. This drawing tablet is thin (only 9mm) and light enough so you can carry it around your workspace.</li><br> 
+    <li style="color:#000000;  font-size:20px;">Power-free pen with 8192 level pressure sensitivity,RESPONSIVE and NO NEED TO CHARGE, allowing for constant uninterrupted using.</li><br>
+    <li style="color:#000000;  font-size:20px;">Smart Gesture Touch & 4 customized Touch Keys: Smart Gesture Pad make your working easily for zoom in & out, and Undo/redo etc.The 4 touch keys can be customized according to your usage habits.</li><br>
+    <li style="color:#000000;  font-size:20px;">Type C interface port: Can easily plug in and out with either direction which is more convenient and stable.</li><br>
+    <li style="color:#000000;  font-size:20px;">Compatible with Mac and Windows. Compatible with drawing softwares such as Photoshop, Illustrator, SAI ,Corel painter, Comic studio, Manga Studio ,Clip Studio etc.</li><br>
+</ul>
+
+	 
+	 
+	 
+<!--Footer-->
+<div align="center" class="myat">
+  <a href="aboutus.html" style="color:#293352">About Us</a>&nbsp &nbsp &nbsp<a href="contactus.html" style="color:#293352">Contact Us</a>&nbsp &nbsp &nbsp <a href="terms.html" style="color:#293352">Terms & Conditions</a> 
+  </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="externalstyle.css">
+   
+</head>
+
+<body>
+<img id="saw" src="logo1.png">
+<!-- Site navigation menu -->
+<ul class="navbar">
+	<!--<h2 style="color:#f5deb3">ABC Educational online shopping</h2></td>-->
+<li><a href="index.html">Home page</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="login.html">Sign in</a></li>
+</ul>
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Category</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="tablet.html" class="w3-bar-item w3-button" style="color:#fff">Drawing Tablet</a>
+     <a href="smartboard.html" class="w3-bar-item w3-button" style="color:#fff">Smart Board</a>
+     <a href="microphone.html" class="w3-bar-item w3-button" style="color:#fff">Microphone</a>
+ </div>
+</div>
+<h2>ABC Educational online shopping</h2>
+<br>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+</script>
+<h3 style="font-size:30px">Contact Us</h3>
+<h3 style="font-size:25px">Address</h3>
+<p>631/5E, Pyay Road, KamayutTownship, Junction of Pyay Road and Inya Road, Yangon.</p>
+<br>
+<br>
+<h3 style="font-size:25px">Phone number</h3>
+<p>09799447023</p>
+<br>
+<br>
+<h3 style="font-size:25px">Email Address</h3>
+<p>winmyataungwma20@gmail.com</p>
+<br>
+<br>
+<h3 style="font-size:25px">Facebook page</h3>
+<p>ABC online educational products</p>
+<!--Footer-->
+<div align="center" class="myat">
+  <a href="aboutus.html" style="color:#293352">About Us</a>&nbsp &nbsp &nbsp<a href="contactus.html" style="color:#293352">Contact Us</a>&nbsp &nbsp &nbsp <a href="terms.html" style="color:#293352">Terms & Conditions</a> 
+  </div>
+</body>
+</html>

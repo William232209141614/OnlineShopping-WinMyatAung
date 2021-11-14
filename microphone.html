@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="externalstyle.css">
+   
+</head>
+
+<body>
+<img id="saw" src="logo1.png">
+<!-- Site navigation menu -->
+<ul class="navbar">
+	<!--<h2 style="color:#f5deb3">ABC Educational online shopping</h2></td>-->
+<li><a href="index.html">Home page</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="login.html">Sign in</a></li>
+</ul>
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Category</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="tablet.html" class="w3-bar-item w3-button" style="color:#fff">Drawing Tablet</a>
+     <a href="smartboard.html" class="w3-bar-item w3-button" style="color:#fff">Smart Board</a>
+     <a href="microphone.html" class="w3-bar-item w3-button" style="color:#fff">Microphone</a>
+ </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+
+<!-- Main content -->
+<h2>ABC Educational online shopping</h2>
+<br>
+<h1><b>Educational Product</b></h1>
+
+<img src="BSOD.jpg" width="200px" height="300px" alt="Microphone">
+<div>
+<p class="win">
+BSOD Karaoke Microphone Bluetooth Karaoke Speaker Portable Handheld for iPhone/Android/iPad/Sony,PC and All Smartphone WS858(Gold)<br>
+Cool Product:This is a cool product, 3-in-1, microphone, speakers, bluetooth<br>
+<br>
+The price is <b> $19.80.<b></p>
+<a href="bsod.html" style="color:#293352" >More details</a>&nbsp&nbsp&nbsp&nbsp<button onclick="myFunction()">Buy Now</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+<img src="BNOK.jpg" width="200px" height="300px" alt="Microphone">
+<div>
+<p class="win">
+ BONAOK Wireless Bluetooth Karaoke Microphone with Multi-color LED Lights, 4 in 1 Portable Handheld Home Party Karaoke Speaker Machine Easter Gift for Android/iPhone/iPad/Sony/PC (Rose Golden)
+<br>
+<br>
+The price is <b>$31.99<b></p>
+<a href="bonok.html" style="color:#293352" >More details</a>&nbsp&nbsp&nbsp&nbsp<button onclick="myFunction()">Buy Now</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<div>
+<img src="ARCHEER.jpg" width="200px" height="300px" alt="Microphone">
+<p class="win">
+ ARCHEER Bluetooth Wireless Microphone, UHF Handheld Dynamic Microphone with Bluetooth Receiver and 3.5mm Adaptor, Selectable UHF Channels Karaoke Microphone for Singing and Other Purpose
+<br>
+<br>
+The price is <b>$42.99.<b></p>
+<a href="archeer.html" style="color:#293352" >More details</a>&nbsp&nbsp&nbsp&nbsp<button onclick="myFunction()">Buy Now</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+<div>
+<img src="Rockville.jpg" width="200px" height="300px" alt="Digital Drawing and Writing Tablet">
+<p class="win">
+Rockville RWM90U UHF (4) Wireless HandHeld Microphones 4 Church Sound Systems<br>
+<br>
+<br>
+The price is <b>$149.95.<b></p>
+<a href="rockville.html" style="color:#293352" >More details</a>&nbsp&nbsp&nbsp&nbsp<button onclick="myFunction()">Buy Now</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<div>
+<img src="MUSYSIC.jpg" width="200px" height="300px" alt="Microphone">
+<p class="win">
+MUSYSIC MU-U8-HH Professional 8-Channels UHF Handheld Wireless Microphone System (FCC Compliance)
+<br>
+<br>
+The price is <b>$299.99<b></p>
+<a href="musysic.html" style="color:#293352" >More details</a>&nbsp&nbsp&nbsp&nbsp<button onclick="myFunction()">Buy Now</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<div>
+<img src="IDOL.jpg" width="200px" height="300px" alt="Microphone">
+<p class="win">
+IDOLmain Auto Sound Cut Off When Dropping Dual Wireless Microphone System UHF-628.
+<br>
+<br>
+The price is <b>$649.00<b></p>
+<a href="idol.html" style="color:#293352" >More details</a>&nbsp&nbsp&nbsp&nbsp<button onclick="myFunction()">Buy Now</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+
+<!--Footer-->
+<div align="center" class="myat">
+  <a href="aboutus.html" style="color:#293352">About Us</a>&nbsp &nbsp &nbsp<a href="contactus.html" style="color:#293352">Contact Us</a>&nbsp &nbsp &nbsp <a href="terms.html" style="color:#293352">Terms & Conditions</a> 
+  </div>
+
+</body>
+</html>

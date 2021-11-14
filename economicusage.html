@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="externalstyle.css">
+   
+</head>
+
+<body>
+<img id="saw" src="logo1.png">
+<!-- Site navigation menu -->
+<ul class="navbar">
+	<!--<h2 style="color:#f5deb3">ABC Educational online shopping</h2></td>-->
+<li><a href="index.html">Home page</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="login.html">Sign in</a></li>
+</ul>
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Category</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="tablet.html" class="w3-bar-item w3-button" style="color:#fff">Drawing Tablet</a>
+     <a href="smartboard.html" class="w3-bar-item w3-button" style="color:#fff">Smart Board</a>
+     <a href="microphone.html" class="w3-bar-item w3-button" style="color:#fff">Microphone</a>
+ </div>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+</script>
+<h2 >ABC Educational online shopping</h2>
+<br>
+<img src="Dt4.jpg" width="200px" height="300px" alt="Digital Drawing and Writing Tablet">
+<h5 style="color:rgb(69, 22, 114); font-size:28px;">Product Details</h5>
+<ul style="list-style-type:disc;">
+
+
+   <li style="color:#000000;  font-size:20px;">High Quality: Electronic message board is made from the high quality materials, it is light, portable and durable.</li><br> 
+	 <li style="color:#000000;  font-size:20px;">Screen Lock: Built in a screen-lock button to avoid the content erased accidentally. It is easy to keep your important message/note/drawing etc.</li><br>
+	 <li style="color:#000000;  font-size:20px;">Large Versatile Screen : With a large bright screen, the digital writing tablet allows you to write enough contents and promises you to writing freely.</li><br>
+	 <li style="color:#000000;  font-size:20px;">Eco-friendly & Eyes protection: You can make it reusable,LCD screen without radiation and glare, all protect eyes ,be more safe and comfortable when you create work for a long time.</li><br>
+	 <li style="color:#000000;  font-size:20px;">Wide Applications & Ideal Gift: Electronic writing tablet, a greater helper for drawing ,note taking, memo, reminding,etc. Ideal gift for kids, designers, business men and deaf-mute people communication.</li><br>
+</ul>
+
+<h6 style="color:rgb(69, 22, 114); font-size:24px;">Specific details</h6>
+<ol>
+  <li>
+    light and stylish, easy to operate, easy to use, can be used over three years old
+  </li>
+  <li>
+    Green and environmental protection, no need to use electricity, the writing principle relies on pressure writing, low power consumption, a button battery can be used for 1-2 years
+  </li>
+  <li>
+    Smooth writing, clear handwriting, real effect like paper, suitable for ordinary writing, painting, design
+  </li>
+  <li>
+    The main body of the stylus is made of plastic material, which has high durability and smooth writing.
+  </li>
+  <li>
+    Change tradition, write innovatively, bid farewell to pigment pigments, and improve children's interest in learning
+  </li>
+</ol>
+
+	 
+	 
+	 
+<!--Footer-->
+<div align="center" class="myat">
+  <a href="aboutus.html" style="color:#293352">About Us</a>&nbsp &nbsp &nbsp<a href="contactus.html" style="color:#293352">Contact Us</a>&nbsp &nbsp &nbsp <a href="terms.html" style="color:#293352">Terms & Conditions</a> 
+  </div>
+
+</body>
+</html>

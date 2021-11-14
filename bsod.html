@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="externalstyle.css">
+   
+</head>
+
+<body>
+<img id="saw" src="logo1.png">
+<!-- Site navigation menu -->
+<ul class="navbar">
+	<!--<h2 style="color:#f5deb3">ABC Educational online shopping</h2></td>-->
+<li><a href="index.html">Home page</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="login.html">Sign in</a></li>
+</ul>
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Category</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="tablet.html" class="w3-bar-item w3-button" style="color:#fff">Drawing Tablet</a>
+     <a href="smartboard.html" class="w3-bar-item w3-button" style="color:#fff">Smart Board</a>
+     <a href="microphone.html" class="w3-bar-item w3-button" style="color:#fff">Microphone</a>
+ </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+</script>
+<h2 >ABC Educational online shopping</h2>
+<br>
+
+<img src="BSOD.jpg" width="200px" height="300px"  alt="microphone">
+<h5 style="color:rgb(69, 22, 114); font-size:28px;">Good points for microphone</h5>
+<ul style="list-style-type:disc;">    
+    <li style="color:#000000;  font-size:20px;">Connection:Bluetooth Connection and Cable Connection, only need to connect your phone with cable or bluetooth.It is easy to operation.</li><br>
+	 <li style="color:#000000;  font-size:20px;">Sound Quality HIFI ,use high-quality speakers for beautiful sound quality.</li><br>
+	 <li style="color:#000000;  font-size:20px;">Easy to use- Multi-function buttons can adjust the Music,Echo, Volume,PA/R.Free to switch the previous and next song mode.</li><br>
+</ul>
+
+<h5 style="color:rgb(69, 22, 114); font-size:28px;">Product Details</h5>
+<ul style="list-style-type:disc;">    
+    <li style="color:#000000; font-size:20px;">Linking Method: Bluetooth 4</li><br>
+    <li style="color:#000000; font-size:20px;">Output power: 5w</li><br>
+    <li style="color:#000000; font-size:20px;">Frequency range: 100Hz 10khz</li><br>
+    <li style="color:#000000; font-size:20px;">Maximum sound pressure level: 115 dB 1khz<br>
+    <li style="color:#000000; font-size:20px;">Total harmonic distortion: less than 1%</li><br>
+    <li style="color:#000000; font-size:20px;">Power: built-in lithium battery</li><br>
+    <li style="color:#000000; font-size:20px;">Battery capacity: 1800 mAh</li><br>	 
+ </ul>
+	 
+<!--Footer-->
+<div align="center" class="myat">
+  <a href="aboutus.html" style="color:#293352">About Us</a>&nbsp &nbsp &nbsp<a href="contactus.html" style="color:#293352">Contact Us</a>&nbsp &nbsp &nbsp <a href="terms.html" style="color:#293352">Terms & Conditions</a> 
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="externalstyle.css">
+   
+</head>
+
+<body>
+<img id="saw" src="logo1.png">
+<!-- Site navigation menu -->
+<ul class="navbar">
+	<!--<h2 style="color:#f5deb3">ABC Educational online shopping</h2></td>-->
+<li><a href="index.html">Home page</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="login.html">Sign in</a></li>
+</ul>
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Category</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="tablet.html" class="w3-bar-item w3-button" style="color:#fff">Drawing Tablet</a>
+     <a href="smartboard.html" class="w3-bar-item w3-button" style="color:#fff">Smart Board</a>
+     <a href="microphone.html" class="w3-bar-item w3-button" style="color:#fff">Microphone</a>
+ </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+
+<!-- Main content -->
+<h2>ABC Educational online shopping</h2>
+<br>
+
+<h3 style="font-size:30px;">OUR PHILOSOPHY</h3>
+<p>Teaching is one of the most challenging and complex jobs on the planet. To engaging students, digital learning tools and technology sharpen critical thinking skills, which are the basis for the development of analytic reasoning.Our digital resources, tools, and learning materials are developed by educational experts to incorporate leading pedagogical practices.<br>
+Digital tools help make teaching and learning more meaningful and fun. Students are also able to collaborate with their own classmates through technological applicationsThey are useful in any type of teaching moment and many can be used to support national education standard.
+From school teachers and tutors to home schoolers and parents, engaged adults are the key to unlocking each child's potential and drive to learn. We empower all kinds of educators to teach kids by providing the best educational resources in any form or device to be used at home, at school, and everywhere in-between<br>
+</p>
+
+<h3 style="font-size:30px;">Our goal</h3>
+<p>The people who visit Education.com are the most important part of what we do.
+We provide learning resources. Why we provide the learning and teaching tools because Digital one can make you all convinent whilw you are in classroom.<br>
+Every user is different, but they share the same goal: to improve the lives of children through education.</p>
+
+<div align="center" class="myat">
+  <a href="aboutus.html" style="color:#293352">About Us</a>&nbsp &nbsp &nbsp<a href="contactus.html" style="color:#293352">Contact Us</a>&nbsp &nbsp &nbsp <a href="terms.html" style="color:#293352">Terms & Conditions</a> 
+  </div>
+  
+</body>
+</html>

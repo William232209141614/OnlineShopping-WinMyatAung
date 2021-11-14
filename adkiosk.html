@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="externalstyle.css">
+   
+</head>
+
+<body>
+<img id="saw" src="logo1.png">
+<!-- Site navigation menu -->
+<ul class="navbar">
+	<!--<h2 style="color:#f5deb3">ABC Educational online shopping</h2></td>-->
+<li><a href="index.html">Home page</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="login.html">Sign in</a></li>
+</ul>
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Category</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="tablet.html" class="w3-bar-item w3-button" style="color:#fff">Drawing Tablet</a>
+     <a href="smartboard.html" class="w3-bar-item w3-button" style="color:#fff">Smart Board</a>
+     <a href="microphone.html" class="w3-bar-item w3-button" style="color:#fff">Microphone</a>
+ </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+</script>
+<h2 >ABC Educational online shopping</h2>
+<br>
+
+<img src="Adkiosk.jpg" width="200px" height="300px" alt="Smart Board">
+<h5 style="color:rgb(69, 22, 114); font-size:28px;">Product Details</h5>
+<ul style="list-style-type:disc;">
+    
+
+      <li style="color:#000000; font-size:20px;">Whiteboard Type: Electronic Whiteboard</li><br> 
+     <li style="color:#000000; font-size:20px;">Model Number:  Model 167</li><br>
+     <li style="color:#000000; font-size:20px;">Panel Life: above 60000 hours</li><br>
+     <li style="color:#000000; font-size:20px;">Audio | Speakers: Biuilt-in HD Audio 8 Realtek ALC888 System | 2 x 10W Speakers</li><br>
+     <li style="color:#000000; font-size:20px;">Network: 3G/4G/WIFI/Ethernet</li><br>
+     <li style="color:#000000; font-size:20px;">Operating System: Windows 7/10 Linux</li><br>
+     <li style="color:#000000; font-size:20px;">Brightness: 500 nit</li><br>
+     <li style="color:#000000; font-size:20px;">Panel Brand: SAMSUNG/LG/AUO</li><br>
+      <li style="color:#000000; font-size:20px;">Kiosk shell material: 1.5mm cold rolled steel+Acrylic cover</li><br>
+      <li style="color:#000000; font-size:20px;">Ports | Slots: Power input | Power switch | PC switch | USB | LAN</li><br>
+  </ul>
+
+<h6 style="color:rgb(69, 22, 114); font-size:24px;">Supply Ability</h6>
+<p style="color:#000000; font-size:20px;">
+  4000 Piece/Pieces per Month</p>
+	 
+	 
+<!--Footer-->
+<div align="center" class="myat">
+  <a href="aboutus.html" style="color:#293352">About Us</a>&nbsp &nbsp &nbsp<a href="contactus.html" style="color:#293352">Contact Us</a>&nbsp &nbsp &nbsp <a href="terms.html" style="color:#293352">Terms & Conditions</a> 
+  </div>
+
+</body>
+</html>

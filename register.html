@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="externalstyle.css">
+   
+</head>
+
+<body>
+<img id="saw" src="logo1.png">
+<!-- Site navigation menu -->
+<ul class="navbar">
+	<!--<h2 style="color:#f5deb3">ABC Educational online shopping</h2></td>-->
+<li><a href="index.html">Home page</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="login.html">Sign in</a></li>
+</ul>
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Category</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="tablet.html" class="w3-bar-item w3-button" style="color:#fff">Drawing Tablet</a>
+     <a href="smartboard.html" class="w3-bar-item w3-button" style="color:#fff">Smart Board</a>
+     <a href="microphone.html" class="w3-bar-item w3-button" style="color:#fff">Microphone</a>
+ </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+
+
+
+    <script type="text/javascript">
+		/*If the user will not input the data in the related field and*
+		press the tab key, this checkblank function is working*/
+        function checkblank(name, error) 
+        {
+			/*Declare x to variable name and
+			the user input "name" value is assigned to x variable*/
+            var x = document.getElementById(name).value;
+			/*If the user will not input the data, this error message is displayed*/
+            if (x == "") {
+                document.getElementById(error).innerHTML = "Please input the required field";
+            } 
+			/*If the user will enter the data, no error message is shown.*/
+			else {
+                document.getElementById(error).innerHTML = "";
+            }
+        }
+		
+		/*If the user will input the wrong format email address in the email text box,
+		this checkemail function is working*/
+        function checkemail() {
+			/*Declare echeck to variable name and
+			the user email input "eid" value is assigned to echeck variable*/
+            var echeck = document.getElementById("eid").value;
+			
+			/*Declare check1 to variable name and
+			the user email input "eid" value is assigned to echeck variable
+			@ sign of index is assigned to check1*/
+			
+            var check1 = echeck.indexOf("@");
+			
+			/*Declare check2 to variable name and
+			the user email input "eid" value is assigned to echeck variable
+			. sign of last index is assigned to check2*/
+            var check2 = echeck.lastIndexOf(".");
+			
+			/*If check1 is less than 4 or check1+3 is less than  check, show the error message
+			means the user inputs the email without @ or .*/
+            if (check1 < 4 || check2 < check1 + 3) {
+                document.getElementById("error2").innerHTML = "Your email format is wrong format";
+            } else {
+                document.getElementById("error2").innerHTML = "";
+            }
+        }
+		
+		
+        /*If the user will not choose the gender field and then
+		click the submit button, this function is working*/
+        function ValidateForm(form) {
+			/*Declare Text to a variable*/
+            ErrorText = "";
+			/*If the user will not choose gender[0]-means male and not choose
+			gender[1]-means female, error message is shown*/
+            if ((form.gender[0].checked == false) && (form.gender[1].checked == false)) {
+                document.getElementById("error6").innerHTML = "Please Choose Gender";
+            }
+            else {
+                document.getElementById("error6").innerHTML= "";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <h2 align="center" 
+#189AB4>Sign up</h2>
+        <div id="row" 
+#189AB4>
+            <div class="col">Your Name</div>
+			<!--If the user will not input Name, checkblank JS function is invoked.-->
+            <div class="col"><input type="text" id="fname" onblur="checkblank('fname','error')"></div>
+			<div class="col" id="error" style="color:red"></div>
+        </div>
+
+        <div id="row" 
+#189AB4>
+            <div class="col">Your Email</div>
+			<!--If the user will not input Email, checkblank JS function is invoked.-->
+			<!--If the user will input Email with incorrect format, checkemail JS function is invoked.-->
+            <div class="col">
+                <input type="text" id="eid" onblur="checkblank('eid','error2')" onkeypress="checkemail()"></div>
+            <div class="col" id="error2" style="color:red"></div>
+        </div>
+        <div id="row" 
+#189AB4>
+            <div class="col">Your Password</div>
+			<!--If the user will not input Password, checkblank JS function is invoked.-->
+            <div class="col"><input type="password" id="pass" onblur="checkblank('pass','error3')"></div>
+            <div class="col" id="error3" style="color:red"></div>
+        </div>
+        <div id="row" 
+#189AB4>
+            <div class="col">Confirm Password</div>
+			<!--If the user will not input Confirm Password, checkblank JS function is invoked.-->
+            <div class="col"><input type="password" id="cmp" onblur="checkblank('cmp','error4')"></div>
+            <div class="col" style="color:red" id="error4"></div>
+        </div>
+        <div id="row" 
+#189AB4>
+            <div class="col">Your Address</div>
+            <div class="col">
+			<!--If the user will not input Address, checkblank JS function is invoked.-->
+                <textarea id="address" onblur="checkblank('address','error5')"></textarea></div>
+            <div class="col" style="color:red" id="error5"></div>
+        </div>
+        <div id="row" 
+#189AB4>
+
+            <form name="feedback" action="#" method=post>
+                <div class="col">Your Gender:</div>
+				<!--If the user will not choose gender, ValidateForm JS function is invoked.-->
+                <div class="col"><input type="radio" name="gender"value="Male" class="gender" id="gd" onblur="checkblank('gd','error6')"> Male
+                    <input type="radio" name="gender" value="Female" class="gender"> Female</div>
+                <div class="col" id="error6" style="color:red"></div>
+                <br><br>
+                <center>
+                    <input type="button" name="SubmitButton" value="Submit" onClick="ValidateForm(this.form)" class="gender">
+                    </center>
+            </form>
+        </div>
+    </div>
+    <div align="center" class="myat">
+        <a href="aboutus.html" style="color:#293352">About Us</a>&nbsp &nbsp &nbsp<a href="contactus.html" style="color:#293352">Contact Us</a>&nbsp &nbsp &nbsp <a href="terms.html" style="color:#293352">Terms & Conditions</a> 
+        </div>
+</body>
+
+</html>

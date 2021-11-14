@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="externalstyle.css">
+   
+</head>
+
+<body>
+<img id="saw" src="logo1.png">
+<!-- Site navigation menu -->
+<ul class="navbar">
+	<!--<h2 style="color:#f5deb3">ABC Educational online shopping</h2></td>-->
+<li><a href="index.html">Home page</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="login.html">Sign in</a></li>
+</ul>
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Category</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="tablet.html" class="w3-bar-item w3-button" style="color:#fff">Drawing Tablet</a>
+     <a href="smartboard.html" class="w3-bar-item w3-button" style="color:#fff">Smart Board</a>
+     <a href="microphone.html" class="w3-bar-item w3-button" style="color:#fff">Microphone</a>
+ </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+</script>
+<h2 >ABC Educational online shopping</h2>
+<br>
+
+<img src="Taiyun.jpg" width="200px" height="300px"alt="Smart Board">
+<h5 style="color:rgb(69, 22, 114); font-size:28px;">Product Details</h5>
+<ul style="list-style-type:disc;">    
+
+    <li style="color:#000000; font-size:20px;">Whiteboard Type:
+      Interactive Whiteboard</li><br> 
+         <li style="color:#000000; font-size:20px;">Model Number:
+      TY-WY750-02A</li><br>
+         <li style="color:#000000; font-size:20px;">Multi touch:
+      10 Touch Point</li><br>
+         <li style="color:#000000; font-size:20px;">Keyword:
+      classroom electronic board</li><br>
+         <li style="color:#000000; font-size:20px;">Touch screen:
+      IR Multi Touch Screen</li><br>
+         <li style="color:#000000; font-size:20px;">Writing tools:
+      Finger/touch pen</li><br>
+         <li style="color:#000000; font-size:20px;">Resolution:
+      4K</li><br>
+         <li style="color:#000000; font-size:20px;">Warranty:
+      2 years</li><br>
+           <li style="color:#000000; font-size:20px;">Application:
+      School Teaching</li><br>
+      </ul>
+
+<h6 style="color:rgb(69, 22, 114); font-size:24px;">Supply Ability</h6>
+<p style="color:#000000; font-size:20px;">
+  1000 Set/Sets per Month classroom electronic board</p>
+	 
+	 
+<!--Footer-->
+<div align="center" class="myat">
+  <a href="aboutus.html" style="color:#293352">About Us</a>&nbsp &nbsp &nbsp<a href="contactus.html" style="color:#293352">Contact Us</a>&nbsp &nbsp &nbsp <a href="terms.html" style="color:#293352">Terms & Conditions</a> 
+  </div>
+</body>
+</html>
